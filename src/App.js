@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import NavInshorts from './components/NavInshorts'
 import NewsContent from './components/NewsContent/NewsContent'
-import apikey from './data/config'
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer.js'
 
 function App() {
   const [category, setCategory] = useState('general')
@@ -16,7 +15,7 @@ function App() {
     try {
       const proxyUrl = `https://cors-anywhere.herokuapp.com/`
       const news = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}&pageSize=${loadMore}&category=${category}`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${loadMore}&category=${category}`
       )
       setNewsArray(news.data.articles)
       setNewsResults(news.data.totalResults)

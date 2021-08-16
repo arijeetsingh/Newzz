@@ -10,8 +10,8 @@ const NavInshorts = ({ setCategory }) => {
       </div>
       <img
         style={{ cursor: 'pointer' }}
-        src='https://assets.inshorts.com/website_assets/images/logo_inshorts.png'
-        height='80%'
+        src='Newzz.png'
+        height='100%'
         alt='Logo'
       />
     </div>

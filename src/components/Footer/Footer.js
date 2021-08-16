@@ -1,11 +1,15 @@
 import React from 'react'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import CodeIcon from '@material-ui/icons/Code'
 import './Footer.css'
 
 const Footer = () => {
   return (
     <div className='footer'>
       <span className='name'>
-        Inshorts App made by -{' '}
+        Newzz App made by -{' '}
         <a href='https://www.linkedin.com/in/arijeetsingh/' target='__blank'>
           Arijeet Singh
         </a>
@@ -13,16 +17,16 @@ const Footer = () => {
       <hr style={{ width: '90%' }} />
       <div className='iconContainer'>
         <a href='https://www.instagram.com/arijeet_singh_/' target='__blank'>
-          <i className='fab fa-instagram-square fa-2x'></i>
+          <InstagramIcon />
         </a>
         <a href='https://www.linkedin.com/in/arijeetsingh/' target='__blank'>
-          <i className='fab fa-linkedin fa-2x'></i>
+          <LinkedInIcon />
         </a>
         <a href='https://github.com/arijeetsingh' target='__blank'>
-          <i className='fas fa-github fa-2x'></i>
+          <GitHubIcon />
         </a>
         <a href='https://leetcode.com/BearAxe/' target='__blank'>
-          <i className='fas fa-code fa-2x'></i>
+          <CodeIcon />
         </a>
       </div>
     </div>
